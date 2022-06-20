@@ -1,0 +1,43 @@
+h1{
+    text-align:center;
+  background:grey;
+}
+
+div{
+  text-align:center;
+  color:white;
+}
+label{
+  font-size:16
+  text-align:center;
+}
+form1{
+  background:black;
+  color:white;
+}
+form2{
+    background:black;
+  color:white;
+}
+form3{
+    background:black;
+  color:white;
+}
+form4{
+    background:black;
+  color:white;
+}
+h5{
+  font-size:19;
+  color:white;
+}
+body{
+  background:rgba(0,0,0,0.8)url('https://miro.medium.com/max/1200/1*BuFLVvsj1c4wHkrzHv8wNg.jpeg');
+  background-blend-mode:darken;
+  background-size:cover;
+  background-attachment:fixed;
+}
+label{
+  width:180px;
+  display:inline-block;
+}
