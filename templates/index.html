@@ -1,0 +1,185 @@
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+<html>
+<body>
+	<center><h1>Default of CreditCard Clients</h1></center>
+ <center> <div1>Please enter the following details of any credit card user and find whether that person is going to default or not for next month<br></div1></center><br>
+<div>
+<form action="/results" method="POST">
+	<label for="LIMIT_BAL">LIMIT BALANCE</label>
+	<input type="text" id="LIMIT_BAL" name="LIMIT_BAL">
+  <BR>
+    <label for="SEX">SEX</label>
+    <select id="SEX" name="SEX">
+    <option value="0">Male</option>
+    <option value="1">Female</option>
+    </select>
+	<br>
+	<label for="EDUCATION">Education</label>
+	<select id="EDUCATION" name="EDUCATION">
+	<option value="2">Grad School</option>
+	<option value="1">University</option>
+	<option value="0">High School</option>
+	</select>
+	<br>
+	<label for="MARRIAGE">Marital Status</label>
+	<select id="MARRIAGE" name="MARRIAGE">
+	<option value="0">Married</option>
+	<option value="1">Single</option>
+	</select>
+	<br>
+  <label for="AGE">Age</label>
+  <input type="text" id="AGE" name="AGE">
+  <br><br>
+    <label for="PAY_0">September Status</label>
+    <select id="PAY_0" name="PAY_0">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+  <br>
+   <label for="PAY_1">August Status</label>
+    <select id="PAY_1" name="PAY_1">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+   <br>
+  <label for="PAY_2">July Status</label>
+    <select id="PAY_2" name="PAY_2">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+   <br>
+  <label for="PAY_3">June Status</label>
+    <select id="PAY_3" name="PAY_3">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+   <br>
+  <label for="PAY_4">May Status</label>
+    <select id="PAY_4" name="PAY_4">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+   <br>
+  <label for="PAY_5">April Status</label>
+    <select id="PAY_5" name="PAY_5">
+      <option value="-2">No consumption</option>
+      <option value="-1">Pay duly</option>
+      <option value="0">Revolve around credit</option>
+      <option value="1">1 month late</option>
+      <option value="2">2 month late</option>
+      <option value="3">3 month late</option>
+      <option value="4">4 month late</option>
+      <option value="5">5 month late</option>
+      <option value="6">6 month late</option>
+      <option value="7">More than 6</option>
+    </select>
+   <br><br>
+  <label for="BILL_AMT1">September Bill Amount</label>
+  <input type="text" id="BILL_AMT1" name="BILL_AMT1">
+  <br>
+  <label for="BILL_AMT2">Agust Bill Amount</label>
+  <input type="text" id="BILL_AMT2" name="BILL_AMT2">
+  <br>
+  <label for="BILL_AMT3">July Bill Amount</label>
+  <input type="text" id="BILL_AMT3" name="BILL_AMT3">
+  <br>
+  <label for="BILL_AMT4">June Bill Amount</label>
+  <input type="text" id="BILL_AMT4" name="BILL_AMT4">
+  <br>
+  <label for="BILL_AMT5">May Bill Amount</label>
+  <input type="text" id="BILL_AMT5" name="BILL_AMT5">
+  <br>
+  <label for="BILL_AMT6">April Bill Amount</label>
+  <input type="text" id="BILL_AMT6" name="BILL_AMT6">
+  <br><br>
+  <label for="PAY_AMT1">September Paid Amount</label>
+  <input type="text" id="PAY_AMT1" name="PAY_AMT1">
+  <br>
+  <label for="PAY_AMT2">Agust Paid Amount</label>
+  <input type="text" id="PAY_AMT2" name="PAY_AMT2">
+  <br>
+  <label for="PAY_AMT3">July Paid Amount</label>
+  <input type="text" id="PAY_AMT3" name="PAY_AMT3">
+  <br>
+  <label for="PAY_AMT4">June Paid Amount</label>
+  <input type="text" id="PAY_AMT4" name="PAY_AMT4">
+  <br>
+  <label for="PAY_AMT5">May Paid Amount</label>
+  <input type="text" id="PAY_AMT5" name="PAY_AMT5">
+  <br>
+  <label for="PAY_AMT6">April Paid Amount</label>
+  <input type="text" id="PAY_AMT6" name="PAY_AMT6">
+  <br><br>
+<div3>
+	<input type="submit" value="Submit"></div3>
+</form>
+</div>
+ <div2>Note: The ML model behind this website is trained using <a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">dataset</a> of credit card clients in Taiwan from April 2005 to September 2005.</div2>
+ <br> <br>
+<div2>Please find the source code in the following repository <a href="https://github.com/VikramTaviti/Credit-Card-Default-Prediction">Click here</a></div2>>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
